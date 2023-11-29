@@ -21,3 +21,8 @@ find . -maxdepth 1 -type d -mtime +1460 -exec `du -h | sort -n -r | head -n 10` 
 ```
 mv {1..100} <directory>
 ```
+
+#### List Files/Directories by Size
+```
+du -a /<directory> | sort -n -r | head -n 10
+```
