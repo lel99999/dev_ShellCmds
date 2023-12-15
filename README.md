@@ -5,6 +5,7 @@ Bash Shell Notes and Workspace
 ```
 $MONTH="Sep-2021"
 $find . -maxdepth 1 -type d -newermt "01-$MONTH -1 sec" -and -not -newermt "01-$MONTH +1 MONTH -1 sec" -exec mv {} sep21 \;
+$find *.gz -mtime 120 -exec mv {} <directory> \;
 
 $find /. -maxdepth 1 -type d -mtime +30
 
