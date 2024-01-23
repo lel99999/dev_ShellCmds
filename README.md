@@ -27,3 +27,6 @@ mv {1..100} <directory>
 ```
 du -a /<directory> | sort -n -r | head -n 10
 ```
+
+#### RHEL 8.x Errors Executing
+- Require: $dnf install redhat-lsb*
